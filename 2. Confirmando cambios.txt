@@ -1,0 +1,7 @@
+Una vez que los archivos se encuentren en el staging area, se procede a confirmarlos al repositorio.
+git commit - m "Descripcion del commit" --> Se confirma los cambios agregados al repositorio.
+
+git commit --amend --> En caso de no haber agregado un archivo que correspondía al anterior commit.
+En pocas palabras concatena nuevos cambios con cambios previos.
+
+git commit --amend "Sobreescribir el mensaje del anterior commit"
