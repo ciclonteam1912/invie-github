@@ -1,0 +1,35 @@
+git status --> Para ver el estado en que se encuentran los archivos dentro de git.
+
+Todos los archivos que tienen el estado untracked quiere decir que se encuentran en el working directory.
+(Se muestran en color rojo).
+
+git add index.html --> Para agregar el archivo del working directory al staging area.
+git add -A --> Agrega todos los archivos que hayan sufrido cambios (creados, modificados, eliminados).
+git add . --> Agrega todos los archivos que hayan sufrido cambios (creados, modificados, NO los eliminados).
+git add -u --> Agrega los archivos modificados y eliminados, PERO NO los creados.
+git add *.html *.css *.js --> Agrega todos los archivos con esas extensiones.
+
+Una vez agregado al staging area si ejecutamos el comando 'git status', este nos mostrará
+que hay cambios para ser comiteados. (Se muestran de color verde).
+
+Hasta que el archivo no este confirmado o comiteado se encuentra en el staging area (entre el working
+directory y el repositorio).
+
+git rm --cached index.html --> Para sacar el archivo agregado al staging area y devolverlo
+al working directory.
+
+git rm -f index.css --> Para sacar el archivo del staging area y del working directory.
+
+Si un archivo está en el staging area y lo removemos con el comando de la línea de comandos
+'rm index.css'. Está aparecerá en el git status como deleted: index.css (en color rojo).
+
+Si luego volvemos a crear un archivo con el mismo nombre (en este caso index.css), al hacer
+git status está volverá a aparecer en el staging area (en color verde).
+
+Si el archivo antes de eliminar contenía algo, al volver a crearlo aparecerá en el git status
+como modified: index.css. (ya que antes de borrarlo el archivo contenía algo, y al volver a crearlo el archivo está vacío).
+
+OBS.: Para eliminar un archivo con el comando rm 'nombre_archivo', este archivo debe
+encontrarse en el working directory y no en el stagin area. Si el archivo se encuentra
+en el staging area y desea eliminarlo también del working directory se utiliza el comando
+de git 'git rm -f index.css'.
