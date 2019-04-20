@@ -1,0 +1,4 @@
+git log --oneline: Coloca los commits de manera resumida y en una sola línea.
+–graph: Nos mostraria los diferentes commits en las ramas o bifurcaciones con un asterisco.
+
+-[numero]: Nos permite ver los últimos commits

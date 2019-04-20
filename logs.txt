@@ -1,0 +1,33 @@
+commit cd513b5eef521812c10e8a38ae28d326eabeda14
+Author: Juan Moris <moris_juan@hotmail.com>
+Date:   Fri Apr 19 20:03:29 2019 -0400
+
+    Creando nuevo commit con git reset --soft
+
+
+commit aaa590c0a37841b450442874fad3ee53b26c6fea
+Author: Juan Moris <moris_juan@hotmail.com>
+Date:   Fri Apr 19 13:18:03 2019 -0400
+
+    Confirmando cambios
+
+
+commit 0b3138960005427483c596e9dbbbd62d58b5586f
+Author: Juan Moris <moris_juan@hotmail.com>
+Date:   Fri Apr 19 13:06:16 2019 -0400
+
+            Agregando nuevo hero
+
+
+commit 0c6cda2d9f0c9311bfac14a68095138df8bcb900
+Author: Juan Moris <moris_juan@hotmail.com>
+Date:   Fri Apr 19 13:04:38 2019 -0400
+
+    Agregando el header
+
+
+commit 664c4490f8b0889ba8af2f8237a528f0066b9f88
+Author: Juan Moris <moris_juan@hotmail.com>
+Date:   Fri Apr 19 12:48:30 2019 -0400
+
+    Agregando, quitando y viendo el status de archivos
