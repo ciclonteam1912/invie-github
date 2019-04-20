@@ -1,0 +1,4 @@
+Para poder editar los mensajes de los commits desde un editor de código.
+git config --global core.editor "code --wait" --> vsCode
+git config --global core.editor "atom --wait" --> atom
+ git config --local core.editor "subl --wait" --> sublime text
