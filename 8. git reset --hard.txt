@@ -1,0 +1,20 @@
+A diferencia del git reset --soft que devuelve los archivos confirmados
+al staging area y del git reset --mixed que retorna los archivos 
+confirmados al working directory, el git reset --hard elimina todos
+los cambios confirmados de un commit a otro (los saca del staging area y
+del working directory).
+
+git reset --hard [SHA1]
+
+Nos elimina los cambios incluso del working directory, es el 
+más peligroso de todos porque podemos perder parte de nuestro trabajo.
+
+Si tenemos cambios en stage podemos utilizar el comando git reset HEAD --hard
+que lo que hara es sacar los cambios de stage y del working directory.
+
+El comando git reset --hard no funciona si los cambios se encuentran
+en el working directory. (untracked files).
+
+OBS.: Es importante guardar los commits en un archivo. 
+Solo por si acaso.
+
