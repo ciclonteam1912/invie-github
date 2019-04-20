@@ -1,0 +1,3 @@
+A diferencia de git reset --soft, a parte de eliminar los commits, 
+nos saca del staging area y nos devuelve al working directory.
+
