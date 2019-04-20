@@ -1,0 +1,14 @@
+El comando git reset --soft nos permite resetear un commit anterior.
+Si quiere susar este comando debes tener mucho cuidado, porque puedes borrar muchos commits.
+
+Una vez aplicado estos commits todos los archivos de los anteriores commits vuelven al area de preparacion
+(staging area), listos para ser confirmados nuevamente en un nuevo commit.
+
+Se debe tener en cuenta lo siguiente:
+1. El working directory no sufre cambios (los archivos locales) ya que lo que realmente se esta haciendo es
+pasar del Repository (commits) al Staging Area (archivos añadidos con git add, por eso aparecen
+en verde).
+2. Es comunmente utilizado para agrupar commits recientes en un solo commit.
+3. Los commit_id no se eliminan. A pesar de usar git reset --soft o git commit tu puedes 
+retornar al estado original (siempre y cuando hayas guardado el commit_id en algun lado).
+4. Maneja un comportamiento especial si el commit_id que elegimos pertenece a un tag. 

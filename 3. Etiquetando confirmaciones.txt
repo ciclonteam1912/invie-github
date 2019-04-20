@@ -1,0 +1,20 @@
+Git usa dos tipos principales de etiquetas: ligeras y anotadas.
+
+Para crear una etiqueta anotada se especifica -a al ejecutar el comando tag.
+git tag -a 0.5 -m 'version estable del proyecto'
+
+Para crear una etiqueta ligera no añadas las opciones -a, -s o -m:
+
+git tag: nos permite agregar etiquetas a nuestros cambios.
+
+-a para la anotación
+-m para el mensaje
+
+git tag -l
+-l nos muestra la lista de etiquetas
+
+git tag -f -a 0.1 -m 'Renombrando un tag' SHA1(código SHA del commit)
+-f para renombrar un tag anterior.
+
+git tag -d 0.1
+-d para borrar

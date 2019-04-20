@@ -1,0 +1,11 @@
+git diff [SHA-1] : Muestra las diferencias del commit [SHA-1] contra el ultimo commit de la rama 
+en la que actuamente estamos (generalmente master)
+git diff [XXX-1] [XXX-2] : Muestra las diferencias del commit [XXX-1] contra el commit [XXX-2]
+
+OBS.: Siempre es mejor comparar el commit mas antiguo contra el mas actual para que no haya confusiones
+al momento de hacer las diferencias entre las versiones.
+
+A veces tenemos archivos con muchas modificaciones y al hacer el git diff se hace un poco difícil 
+de tener una vision global de todos los cambios. 
+Por tanto es bueno exportar la salida de este comando a un archivo, esto se logra haciendo lo siguiente:
+git diff fileName > fileToExport.txt
