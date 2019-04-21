@@ -1,0 +1,16 @@
+Una rama es una línea alterna del tiempo (del proyecto). 
+La rama por defecto es master, la rama de GitHub Pages es gh-pages y 
+cuando se trabaja como colaborador 
+se identifica el proyecto principal con la rama upstream.
+
+git branch [nombre] se crea una nueva rama
+-l: listamos las ramas
+-d/-D [nombre]: borramos rama
+-m [nombre] [nombre_nuevo]: para renombrar ramas
+
+git branch -v --> para listar las ramas y mostrar sus commits
+
+OBS.:  El -d no funciona si la rama tiene commits y/o cambios 
+no fusionados, en ese caso es que usamos -D 
+(la minúscula ramas sin cambios, la mayúscula forza a borrar ramas 
+con cambios)
