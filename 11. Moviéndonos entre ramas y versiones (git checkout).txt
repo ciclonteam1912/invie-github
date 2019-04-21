@@ -1,0 +1,21 @@
+git checkout [nombre/sha1]: Nos permite mover entre ramas y entre commits, 
+no vamos a borrar nada. 
+Acá es donde podemos movernos en el tiempo.
+
+git checkout -b [nombre_rama]: Nos permite crear una nueva rama sin 
+necesidad de usar branch.
+
+git checkout -b [nombre_rama] : Crear una nueva rama con base a su ubicación 
+actual (head) y luego se sitúa sobre ella.
+git checkout [nombre_archivo] : Descarta los cambios que se hayan hecho de 
+un archivo en el Working Directory (o que hayan sido añadidos en el 
+Staging Area) con base al último commit enviado.
+git checkout -f : Descarta todos los cambios que se hayan hecho en el 
+Working Directory (o que hayan sido añadidos en el Staging Area) con 
+base al último commit enviado.
+
+Nota Importante! Si existen archivos modificados en el Working Directory o 
+agregados en el Staging Area, estos cambios los mantendrá a pesar de que 
+se cambie entre ramas. Para asegurar que los cambios que se están realizando 
+se mantengan en esta rama es necesario realizar un git add y un git commit de 
+los archivos modificados ANTES de cambiar a otra rama.
