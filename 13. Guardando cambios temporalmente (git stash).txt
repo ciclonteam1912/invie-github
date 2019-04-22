@@ -1,0 +1,25 @@
+git stash : Guarda el trabajo actual de manera temporal. 
+(Archivos modificados o eliminados)
+
+git stash -u : Crea un stash con todos los archivos. 
+(Añadiendo los creados Untracked, Working directory)
+
+git stash list : Permite visualizar todos los stash existentes.
+git stash clear : Elimina todos los stash existentes.
+git stash show stash@{num_stash} : Muestra los archivos cambiados en ese stash.
+git stash show -p stash@{num_stash} : Muestra los archivos cambiados en ese 
+stash en detalle.
+git stash drop stash@{num_stash} : Elimina un stash específico.
+git stash apply : Aplica el stash más reciente. El que tiene num_stash=0.
+git stash apply stash@{num_stash} : Aplica los cambios de un stash específico.
+
+git stash pop : Aplica el cambio más reciente y elimina el stash.
+git stash pop stash@{num_stash} : Aplica los cambios de un stash específico 
+y elimina el stash.
+
+El cambio más reciente (al crear un stash) SIEMPRE recibe el valor 0 y los 
+que estaban antes aumentan su valor.
+Al crear un stash tomará los archivos que han sido modificados y eliminados. 
+Para que tome un archivo creado es necesario agregarlo al Staging Area con git 
+add [nombre_archivo].
+Al aplicar un stash este no se elimina, es buena práctica eliminarlo.
